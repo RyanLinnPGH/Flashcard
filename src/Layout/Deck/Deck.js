@@ -39,17 +39,17 @@ export default function Deck() {
         <p>{deck.description}</p>
         <Link to={`${url}/edit`}>
           <button type="button" className="btn btn-secondary">
-            <span class="oi oi-pencil  mr-1"></span>Edit
+            <span className="oi oi-pencil  mr-1"></span>Edit
           </button>
         </Link>
         <Link to={`${url}/study`}>
           <button type="button" className="btn btn-primary ml-2">
-            <span class="oi oi-book  mr-1"></span>Study
+            <span className="oi oi-book  mr-1"></span>Study
           </button>
         </Link>
         <Link to={`${url}/cards/new`}>
           <button type="button" className="btn btn-primary ml-2">
-            <span class="oi oi-plus mr-1"></span>Add Card
+            <span className="oi oi-plus mr-1"></span>Add Card
           </button>
         </Link>
         <button
@@ -60,7 +60,7 @@ export default function Deck() {
             history.push("/");
           }}
         >
-          <span class="oi oi-trash"></span>
+          <span className="oi oi-trash"></span>
         </button>
       </div>
       <h2>Cards</h2>
@@ -76,7 +76,7 @@ export default function Deck() {
                 <div className="d-flex justify-content-end mt-2">
                   <Link to={`${url}/cards/${card.id}/edit`}>
                     <button type="button" className="btn btn-secondary mr-2">
-                      <span class="oi oi-pencil  mr-1"></span>Edit
+                      <span className="oi oi-pencil  mr-1"></span>Edit
                     </button>
                   </Link>
                   <button
@@ -88,7 +88,7 @@ export default function Deck() {
                       history.go(0);
                     }}
                   >
-                    <span class="oi oi-trash"></span>
+                    <span className="oi oi-trash"></span>
                   </button>
                 </div>
               </div>

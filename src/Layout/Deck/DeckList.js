@@ -30,7 +30,7 @@ export default function DeckList() {
     <div>
       <Link to="/decks/new">
         <button type="button" className="btn btn-primary mb-3">
-          <span class="oi oi-plus mr-1"></span>
+          <span className="oi oi-plus mr-1"></span>
           Create Deck
         </button>
       </Link>
@@ -49,7 +49,7 @@ export default function DeckList() {
                 </Link>
                 <Link to={`/decks/${deck.id}/study`}>
                   <button type="button" className="btn btn-primary ml-2">
-                    <span class="oi oi-book  mr-1"></span>Study
+                    <span className="oi oi-book  mr-1"></span>Study
                   </button>
                 </Link>
                 <button
@@ -61,7 +61,7 @@ export default function DeckList() {
                     history.go(0);
                   }}
                 >
-                  <span class="oi oi-trash"></span>
+                  <span className="oi oi-trash"></span>
                 </button>
               </div>
             </div>
