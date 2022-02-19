@@ -22,7 +22,7 @@ export default function DeckFormPage({
           Name
         </label>
         <input
-          value={formData.name}
+          value={formData.name || ''}
           onChange={handleChange}
           name="name"
           id="name"
